@@ -18,5 +18,3 @@ ingredients = JSON.parse(ingredients_serialized)["drinks"]
 ingredients.each do |ingredient|
   Ingredient.create(name: ingredient["strIngredient1"])
 end
-
-Cocktail.create(name: "Le Basile")

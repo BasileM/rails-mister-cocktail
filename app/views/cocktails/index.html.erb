@@ -1,3 +1,11 @@
+<div class="banner">
+  <div class="text-center">
+  <h1>WELCOME</h1>
+  <%= link_to "Create cocktail", new_cocktail_path, class: "btn-yours" %>
+  </div>
+</div>
+
+
 <div class="container">
     <h1>My list of cocktails</h1>
     <ul>
@@ -5,8 +13,6 @@
         <li><%= link_to cocktail.name, cocktail_path(cocktail) %></li>
       <% end %>
     </ul>
-
-    <p><%= link_to "Create cocktail", new_cocktail_path %></p>
   </div>
 
 
